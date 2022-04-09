@@ -1,6 +1,6 @@
 // TODO: Include packages needed for this application
-
 const inquirer = require("inquirer");
+const generateMarkdown = require('./utils/generateMarkdown.js')
 
 // TODO: Create an array of questions for user input
 const questions = () => {
@@ -43,17 +43,35 @@ const questions = () => {
                     return false;
                 }
             }
-        }
+        },
+        {
+            type: 'confirm',
+            name: 'confirmInstallGuide',
+            message: 'Does your project require an installation guide?',
+            default: true
+        },
+        {
+            type: 'input',
+            name: 'installation',
+            message: 'Please enter your installation steps.',
+            when: ({ confirmInstallGuide }) => {
+                if (confirmInstallGuide) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+        }        
     ])
 }
 
 questions();
 
 // TODO: Create a function to write README file
-// function writeToFile(fileName, data) { }
+function writeToFile(fileName, data) { }
 
 // // TODO: Create a function to initialize app
-// function init() { }
+function init() { }
 
 // // Function call to initialize app
-// init();
+init();
