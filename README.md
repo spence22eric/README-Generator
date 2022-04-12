@@ -1,12 +1,10 @@
-# Beans wtf
+# README Generator
 
 ## Description
 
-Don’t reinvent the wheel. Heroku’s 200+ third-party add-ons, 7800+ open source buildpacks, and 7200+ ready-to-deploy Heroku Buttons provides a rich ecosystem of pre-integrated extensions and services.Don’t reinvent the wheel. Heroku’s 200+ third-party add-ons, 7800+ open source buildpacks, and 7200+ ready-to-deploy Heroku Buttons provides a rich ecosystem of pre-integrated extensions and services.
+This app will take some user input and add it into a fully generated README file!
 
 ## Table of Contents (Optional)
-
-If your README is long, add a table of contents to make it easy for users to find what they need.
 
 - [Installation](#installation)
 - [Usage](#usage)
@@ -15,11 +13,15 @@ If your README is long, add a table of contents to make it easy for users to fin
 
 ## Installation
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+firstly, you'll need to install the required packages.
+
+- in your root directory, type in the command console 'npm install inquirer' and 'npm install node'
+- 
 
 ## Usage
 
-apsoeityghqapoweihtaopidjhvopasdihgoaihvoanvopzncva sodvnfaspodf iasdfasdoif aosdnfaoweira noaisdnfogansepotiaebtoiarhgopiasdnf aosdf aosdnf oasdn fopas
+#### Video
+
 
 ## Credits
 
